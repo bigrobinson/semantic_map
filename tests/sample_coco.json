@@ -1,0 +1,89 @@
+{
+  "info": {
+    "contributor": "bigrobinson",
+    "date_created": "2026-06-12",
+    "description": "Sample Costmap Annotations",
+    "version": "1.0"
+  },
+  "licenses": [
+    {
+      "id": 1,
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "width": 800,
+      "height": 600,
+      "file_name": "costmap.png"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Office Zone",
+      "supercategory": ""
+    },
+    {
+      "id": 2,
+      "name": "Desk Workspace",
+      "supercategory": "Office Zone"
+    },
+    {
+      "id": 3,
+      "name": "Kitchen Zone",
+      "supercategory": ""
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 2,
+      "segmentation": [
+        [100.0, 100.0, 200.0, 100.0, 200.0, 200.0, 100.0, 200.0]
+      ],
+      "area": 10000.0,
+      "bbox": [100.0, 100.0, 100.0, 100.0],
+      "iscrowd": 0,
+      "attributes": {
+        "occluded": "false",
+        "furniture": "desk",
+        "electronics": "computer monitor"
+      }
+    },
+    {
+      "id": 2,
+      "image_id": 1,
+      "category_id": 2,
+      "segmentation": [
+        [110.0, 110.0, 190.0, 110.0, 190.0, 190.0, 110.0, 190.0]
+      ],
+      "area": 6400.0,
+      "bbox": [110.0, 110.0, 80.0, 80.0],
+      "iscrowd": 0,
+      "attributes": {
+        "occluded": "false",
+        "furniture": "desk chair"
+      }
+    },
+    {
+      "id": 3,
+      "image_id": 1,
+      "category_id": 3,
+      "segmentation": [
+        [400.0, 400.0, 500.0, 400.0, 500.0, 500.0, 400.0, 500.0]
+      ],
+      "area": 10000.0,
+      "bbox": [400.0, 400.0, 100.0, 100.0],
+      "iscrowd": 0,
+      "attributes": {
+        "occluded": "false",
+        "appliance": "refrigerator",
+        "furniture": "kitchen counter"
+      }
+    }
+  ]
+}
